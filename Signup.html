@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            background-color: #022144;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        .MyCard{
+            width: 50rem;
+            height: 40rem;
+            background-color: #0066b2;
+            color: white;
+            display: flex;
+            justify-content: start;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            border-radius: 2rem;
+            overflow: hidden;
+        }
+        .MyCard .RightContent img{
+            width: 27rem;
+            height: 40rem;
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+        }
+        .SignupContent p{
+            display: flex;
+            justify-content: center;
+            /* padding-right: 5rem; */
+        }
+        .SignupContent h2{
+            display: flex;
+            justify-content: center;
+        }
+        .SignupContent{
+            padding-left: 3rem;
+            padding-top: 8rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .SignupContent a{
+            padding-left: 0.6rem;
+            text-decoration: none;
+            color: white;
+        }
+        .SignupContent a:hover{
+            color: rgb(219, 139, 139);
+            text-decoration: underline;
+        }
+        form .name, .email, .password{
+            height: 2.5rem;
+            font-style: italic;
+            font-weight: 700;
+            width: 17rem;
+            border-radius: 1rem;
+            padding: 0.3rem;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .sign-in_btn .comeONweb{
+            height: 2.5rem;
+            font-style: italic;
+            font-weight: 700;
+            width: 17rem;
+            border-radius: 1rem;
+            padding: 0.3rem;
+            background-color:#071f3b;
+            color: white;
+            font-size: 1.1rem;
+            border: none;
+            margin-top: 1rem;
+        }
+        .sign-in_btn .comeONweb:hover{
+            background-color: #737cce;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .MyCard {
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+                height: auto;
+            }
+            .MyCard .RightContent img {
+                width: 100%;
+                height: auto;
+                border-radius: 2rem 2rem 0 0;
+            }
+            .SignupContent {
+                padding: 2rem;
+                text-align: center;
+            }
+            .SignupContent p {
+                padding-right: 0;
+            }
+            .sign-in_btn .comeONweb,
+            form .name, .email, .password {
+                width: 100%;
+                max-width: 17rem;
+            }
+            .Signup_option {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+            }
+            .Signup_option img{
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="MyCard">
+            <div class="RightContent">
+                <img src="world-trave.jpg" alt="">
+            </div>
+
+            <div class="LeftContent">
+                <div class="SignupContent">
+                    <h2>Create Account on Travoire</h2>
+                    <p>Already have an account?<a href="login.html"> Login</a></p>
+                    <form action="index.html">
+                        <label for="name"></label>
+                        <input type="text" class="name" name="name" id="name" placeholder="Enter Name" required>
+
+                        <label for="username"></label>
+                        <input type="email" class="email" name="username" id="username" placeholder="Enter Email" required>
+
+                        <label for="password"></label>
+                        <input type="password" class="password" name="password" id="password" placeholder="Password" required>
+                        <div class="sign-in_btn">
+                            <button type="submit" class="comeONweb">SignIn</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

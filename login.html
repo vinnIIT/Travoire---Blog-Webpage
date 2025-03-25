@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            background-color: #022144;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        .loginCARD{
+            width: 50rem;
+            height: 40rem;
+            background-color: #0066b2;
+            color: white;
+            display: flex;
+            justify-content: start;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            border-radius: 2rem;
+            overflow: hidden;
+        }
+        .loginCARD .RightContent img{
+            width: 27rem;
+            height: 40rem;
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+        }
+        .loginContent p{
+            display: flex;
+            justify-content: center;
+            padding-right: 3.1rem;
+        }
+        .loginContent h2{
+            display: flex;
+            justify-content: center;
+            padding-top: 1rem;
+        }
+        .loginContent{
+            padding-left: 3rem;
+            padding-top: 8rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .loginbtn .jump{
+            height: 2.5rem;
+            font-style: italic;
+            font-weight: 700;
+            width: 17rem;
+            border-radius: 1rem;
+            padding: 0.3rem;
+            background-color:#071f3b;
+            color: white;
+            font-size: 1.1rem;
+            border: none;
+            margin-top: 1rem;
+        }
+        .loginbtn .jump:hover{
+            background-color: #737cce;
+            cursor: pointer;
+        }
+        form .username, .password{
+            height: 2.5rem;
+            font-style: italic;
+            font-weight: 700;
+            width: 17rem;
+            border-radius: 1rem;
+            padding: 0.3rem;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .account_link{
+            display: flex;
+            justify-content: space-between;
+        }
+        .account_link a{
+            color: white;
+            text-decoration: none;
+        }
+        .account_link a:hover{
+            color: rgb(66, 22, 22);
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .loginCARD {
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+                height: auto;
+            }
+            .loginCARD .RightContent img {
+                width: 100%;
+                height: auto;
+                border-radius: 2rem 2rem 0 0;
+            }
+            .loginContent {
+                padding: 2rem;
+                text-align: center;
+            }
+            .loginContent p {
+                padding-right: 0;
+            }
+            .loginbtn .jump,
+            form .username, .password {
+                width: 100%;
+                max-width: 17rem;
+            }
+            .account_link {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="loginCARD">
+            <div class="RightContent">
+                <img src="travel_back_login.jpg" alt="">
+            </div>
+            <div class="LeftContent">
+                <div class="loginContent">
+                    <h2>Welcome back to Travoire</h2>
+                    <p>Login your account</p>
+                    <form action="index.html">
+                        <label for="name"></label>
+                        <input type="text" class="username" name="UserName" id="UserName" placeholder="Username" required>
+                        <label for="Password"></label>
+                        <input type="password" class="password" name="Password" id="Password" placeholder="Password" required>
+                        <div class="loginbtn">
+                            <a href=""><Button type="submit" class="jump">Login</Button></a>
+                        </div>
+                    </form>
+                    <span class="account_link">
+                        <a class="donot_account" href="Signup.html">Don't have account ?</a>
+                        <a href="#" class="ForgotPassword">Forget Password ?</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
